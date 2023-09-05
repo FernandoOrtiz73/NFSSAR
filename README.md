@@ -24,12 +24,10 @@ sudo chmod 777 /mnt/nfs_share
 ```
 sudo nano /etc/exports
 ```
-7. Insertar línea resaltada en blanco
+7. Insertar línea resaltada en blanco en cualquier parte del documento
 ```
 /mnt/nfs_share 192.168.0.0/24(rw,sync,no_subtree_check)
 ```
-![archivo nano](NFS/1.png)
-
 8. Ejecutar
 ```
 sudo exportfs -a
